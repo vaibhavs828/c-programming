@@ -14,8 +14,9 @@ void getn(int *n)
        scanf("%d",a[i]);
     }  
  }
- int compute(int a[n],int sum,int n)
+ int compute(int sum,int n, int i)
  {   sum=0;
+     int a[i];
      for(int i=0;i<n;i++)
      sum =sum+a[i];
      return sum;
@@ -27,8 +28,9 @@ void output(int sum)
  }
 int main()
 {     
-      input(&n,i,a);
-      compute(a[n],sum);
+      int n,i,a,sum;
+      input(&n,i);
+      compute(sum,n,i);
       output(sum); 
 
 }
