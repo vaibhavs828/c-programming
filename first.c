@@ -2,7 +2,7 @@
 #include<conio.h>
 void main()
 {
-clrscr();
-printf("Hey there");
-  getch();
-  }
+    clrscr();
+    printf("Hey there");
+    getch();
+}
