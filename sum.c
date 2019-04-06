@@ -1,6 +1,7 @@
     
 #include<stdio.h>
- {
+void input(int *a, int*b)
+ {   
      printf("Enter first number\n");
      scanf("%d",a);
      printf("Enter second number\n");
