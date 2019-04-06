@@ -6,8 +6,8 @@ void getn(int *n)
      scanf("%d",n);
 
  }
- void input(int n,int a[n] )
- {
+ void input(int n )
+ {  int i, a[i];
     for(int i=0;i<n;i++)
     {  
        printf("Enter the elements\n");
@@ -23,13 +23,13 @@ void getn(int *n)
 }
 void output(int sum)
 {    
-     printf("The sum is %d",&sum);
+     printf("The sum is %d",sum);
      
  }
 int main()
 {     
       int n,i,a,sum;
-      input(&n,i);
+      input(n);
       compute(sum,n,i);
       output(sum); 
 
