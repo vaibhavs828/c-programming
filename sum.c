@@ -24,4 +24,4 @@ int main()
       output(a,b,c); 
 
 }
- void input(int *a, int *b)
+
