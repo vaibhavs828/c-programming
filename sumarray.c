@@ -6,31 +6,34 @@ void getn(int *n)
      scanf("%d",n);
 
  }
- void input(int n )
- {  int i, a[i];
-    for(int i=0;i<n;i++)
+ void input(int n,int a[])
+ {  int i;
+    for(i=0;i<n;i++)           
     {  
        printf("Enter the elements\n");
-       scanf("%d",a[i]);
+       scanf("%d",&a[i]);
     }  
  }
- int compute(int sum,int n, int i)
- {   sum=0;
-     int a[i];
+ int compute(int n, int a[])
+ {   int sum=0;
+     //int a[n];
      for(int i=0;i<n;i++)
      sum =sum+a[i];
      return sum;
-}
+}                   
 void output(int sum)
 {    
-     printf("The sum is %d",sum);
+     printf("Sum is %d",sum);
      
  }
 int main()
 {     
-      int n,i,a,sum;
-      input(n);
-      compute(sum,n,i);
+      int n,sum=0;
+      getn(&n);
+      int a[n];
+      input(n,a);
+      sum=compute(n,a);
       output(sum); 
 
 }
+ 
