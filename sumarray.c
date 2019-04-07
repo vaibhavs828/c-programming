@@ -21,10 +21,17 @@ void getn(int *n)
      sum =sum+a[i];
      return sum;
 }                   
-void output(int sum)
+void output(int sum, int n, int a[])
 {    
-     printf("Sum is %d",sum);
-     
+     int i,j; 
+     for( i=0;i<n;i++)
+     { printf("%d",a[i]);
+       for(j=0;i!=n-1;j++)
+       {printf("+ ");
+       break;
+       }
+     }
+     printf(" = %d",sum);
  }
 int main()
 {     
@@ -33,7 +40,7 @@ int main()
       int a[n];
       input(n,a);
       sum=compute(n,a);
-      output(sum); 
+      output(sum,n,a); 
 
 }
  
